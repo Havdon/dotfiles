@@ -5,8 +5,7 @@
 
 dir=~/dotfiles                    # dotfiles directory
 olddir=~/dotfiles_old             # old dotfiles backup directory
-files="bashrc bash_aliases vimrc vim"    # list of files/folders to symlink in homedir
-
+files="wp wallpapers bashrc vimrc bash_alias i3 vim bash_profile"    # list of files/folders to symlink in homedir
 ##########
 
 # create dotfiles_old in homedir

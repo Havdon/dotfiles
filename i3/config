@@ -9,6 +9,8 @@ bindsym XF86AudioLowerVolume exec --no-startup-id amixer -D pulse sset Master 5%
 
 exec --no-startup-id /usr/bin/xindkeys
 
+exec wp change
+
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 #
@@ -165,7 +167,7 @@ bindsym Mod4+r mode "resize"
 
 
 bar {
-        status_command ~/libs/vr.sh
+        status_command i3status
 }
 
 #######################################################################
@@ -189,9 +191,9 @@ workspace 9 output VGA-1-0
 
 
 
-exec --no-startup-id i3-msg 'workspace 9; exec thunderbird; workspace 1;'
-exec --no-startup-id i3-msg 'workspace 3; exec google-chrome; workspace 1'
-exec --no-startup-id i3-msg 'workspace 2; exec idea;'
+#exec --no-startup-id i3-msg 'workspace 9; exec thunderbird; workspace 1;'
+#exec --no-startup-id i3-msg 'workspace 3; exec google-chrome; workspace 1'
+#exec --no-startup-id i3-msg 'workspace 2; exec idea;'
 
 
 #exec --no-startup-id i3-msg 'rename workspace 2 to "2: Idea"'
